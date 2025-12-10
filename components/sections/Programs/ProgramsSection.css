@@ -1,0 +1,72 @@
+.programs-section {
+  width: 100%;
+  padding: 4rem 2rem;
+  background-color: #f3f4f6;
+  text-align: center;
+}
+
+.programs-heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #111827;
+  margin-bottom: 0.5rem;
+}
+
+.programs-subheading {
+  font-size: 1.5rem;
+  color: #6b7280;
+  margin-bottom: 3rem;
+}
+
+/* 3 Cards per Row on Desktop */
+.programs-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+/* Program Card */
+.program-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  transition: 0.3s ease;
+}
+
+.program-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+}
+
+.program-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.program-title {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #111827;
+  margin-bottom: 0.5rem;
+}
+
+.program-desc {
+  color: #6b7280;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Responsive: 2 cards per row (tablet) */
+@media (max-width: 1024px) {
+  .programs-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Responsive: 1 card per row (mobile) */
+@media (max-width: 640px) {
+  .programs-grid {
+    grid-template-columns: 1fr;
+  }
+}

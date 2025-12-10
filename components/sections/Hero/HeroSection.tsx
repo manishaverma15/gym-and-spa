@@ -1,7 +1,7 @@
 'use client';
 
 import Lottie from 'lottie-react';
-import gymAnimation from '../../public/lottie/gym-animation.json';
+import gymAnimation from '../../../public/lottie/gym-animation.json';
 import './HeroSection.css';
 
 const HeroSection = () => {

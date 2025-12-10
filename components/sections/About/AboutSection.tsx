@@ -2,7 +2,7 @@
 
 import './AboutSection.css';
 import Lottie from 'lottie-react';
-import pushUpAnimation from '../../public/lottie/push-up-animation.json';
+import pushUpAnimation from '../../../public/lottie/push-up-animation.json';
 import './AboutSection.css';
 
 const AboutSection = () => {
