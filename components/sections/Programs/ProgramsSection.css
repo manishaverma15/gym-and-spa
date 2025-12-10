@@ -18,14 +18,12 @@
   margin-bottom: 3rem;
 }
 
-/* 3 Cards per Row on Desktop */
 .programs-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
 }
 
-/* Program Card */
 .program-card {
   background: white;
   padding: 2rem;
