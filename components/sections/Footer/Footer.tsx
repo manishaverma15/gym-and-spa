@@ -38,15 +38,15 @@ const Footer = () => {
 
         <div className="footer-col">
           <h4 className="footer-title">Contact Us</h4>
-          <p className="footer-contact">📍 Chandigarh, India</p>
-          <p className="footer-contact">📞 +91 98765 43210</p>
-          <p className="footer-contact">✉️ support@gymspa.com</p>
+          <p className="footer-contact">Location: Chandigarh, India</p>
+          <p className="footer-contact">Phone No: +91 98765 43210</p>
+          <p className="footer-contact">Email: support@gympro.com</p>
         </div>
 
       </div>
 
       <div className="footer-bottom">
-        © {new Date().getFullYear()} GymSpa. All rights reserved.
+        © {new Date().getFullYear()} GymPro. All rights reserved.
       </div>
     </footer>
   );

@@ -1,7 +1,7 @@
 'use client';
 
-import './TrainersSection.css';
 import { trainers } from '@/components/data/trainersList';
+import './TrainersSection.css';
 
 const TrainersSection = () => {
   return (
