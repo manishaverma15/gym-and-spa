@@ -5,7 +5,7 @@ import { trainers } from '@/components/data/trainersList';
 
 const TrainersSection = () => {
   return (
-    <section className="trainers-section">
+    <section className="trainers-section" id="trainers">
       <h2 className="trainers-heading">Meet Our Trainers</h2>
       <p className="trainers-subheading">
         Expert coaches dedicated to your fitness journey.

@@ -5,7 +5,7 @@ import './ProgramsSection.css';
 
 const ProgramsSection = () => {
   return (
-    <section className="programs-section">
+    <section className="programs-section" id="programs">
       <h2 className="programs-heading">Our Programs</h2>
       <p className="programs-subheading">
         Improve your fitness with professionally designed training programs.

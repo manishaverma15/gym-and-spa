@@ -1,15 +1,14 @@
 'use client';
 
-import './AboutSection.css';
 import Lottie from 'lottie-react';
 import pushUpAnimation from '../../../public/lottie/push-up-animation.json';
+import Button from '@/components/ui/Button';
 import './AboutSection.css';
 
 const AboutSection = () => {
   return (
-    <section className="about-section">
+    <section className="about-section" id="about">
       <div className="about-container">
-
         <div className="about-animation">
           <Lottie animationData={pushUpAnimation} loop className="about-lottie" />
         </div>
@@ -28,9 +27,11 @@ const AboutSection = () => {
             we make fitness accessible for everyone — from beginners to athletes.
           </p>
 
-          <button className="about-btn">Join the Community</button>
-        </div>
+          <Button variant="primary" size="lg">
+            Join the Community
+          </Button>
 
+        </div>
       </div>
     </section>
   );

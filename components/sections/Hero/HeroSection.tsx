@@ -3,10 +3,11 @@
 import Lottie from 'lottie-react';
 import gymAnimation from '../../../public/lottie/gym-animation.json';
 import './HeroSection.css';
+import Button from '@/components/ui/Button';
 
 const HeroSection = () => {
   return (
-    <section className="hero-section">
+    <section className="hero-section" id="home">
       <div className="hero-content">
         <h1 className="hero-title">
           Transform Your Body.<br />Transform Your Life.
@@ -18,8 +19,13 @@ const HeroSection = () => {
         </p>
 
         <div className="hero-buttons">
-          <button className="hero-btn-primary">Start Training</button>
-          <button className="hero-btn-secondary">View Plans</button>
+          <Button variant="primary" size="md">
+            Start Training
+          </Button> 
+
+          <Button variant="secondary" size="md">
+            View Plans
+          </Button>
         </div>
       </div>
 
