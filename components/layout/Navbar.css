@@ -34,10 +34,6 @@
   transition: 0.3s ease;
 }
 
-/* .navbar-link:hover {
-  color: rgba(64, 120, 222, 0.35);;
-} */
-
 .navbar-menu-icon {
   display: none;
   font-size: 2rem;

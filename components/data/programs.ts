@@ -1,34 +1,34 @@
-'use client';
+import type { Program } from "@/types/program";
 
-export const programs = [
+export const programs: Program[] = [
   {
     title: "Strength Training",
     desc: "Increase muscle power and endurance with guided strength workouts.",
-    icon: "💪"
+    iconKey: "strength",
   },
   {
     title: "Weight Loss Program",
     desc: "Burn fat and boost metabolism with structured cardio + HIIT.",
-    icon: "🔥"
+    iconKey: "weightLoss",
   },
   {
     title: "Yoga & Flexibility",
     desc: "Improve flexibility, posture, and mindfulness through yoga.",
-    icon: "🧘‍♂️"
+    iconKey: "yoga",
   },
   {
     title: "Personal Training",
     desc: "1-on-1 coaching tailored to your fitness goals.",
-    icon: "🏋️‍♂️"
+    iconKey: "personal",
   },
   {
     title: "CrossFit & HIIT",
     desc: "High-intensity functional workouts for stamina and strength.",
-    icon: "⚡"
+    iconKey: "hiit",
   },
   {
     title: "Nutrition Guidance",
     desc: "Get personalized diet plans from certified experts.",
-    icon: "🥗"
-  }
+    iconKey: "nutrition",
+  },
 ];

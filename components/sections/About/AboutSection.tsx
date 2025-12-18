@@ -1,7 +1,5 @@
 'use client';
 
-import Lottie from 'lottie-react';
-import pushUpAnimation from '../../../public/lottie/push-up-animation.json';
 import Button from '@/components/ui/Button';
 import './AboutSection.css';
 
