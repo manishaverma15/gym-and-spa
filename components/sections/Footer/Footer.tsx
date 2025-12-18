@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="footer-container">
 
         <div className="footer-col">
-          <h3 className="footer-logo">GymPro</h3>
+          <h3 className="footer-logo">GYMPRO</h3>
           <p className="footer-text">
             Transforming fitness and wellness through expert training,
             premium facilities, and holistic care.

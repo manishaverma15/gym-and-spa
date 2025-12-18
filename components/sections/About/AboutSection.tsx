@@ -9,12 +9,15 @@ const AboutSection = () => {
   return (
     <section className="about-section" id="about">
       <div className="about-container">
-        <div className="about-animation">
-          <Lottie animationData={pushUpAnimation} loop className="about-lottie" />
+        <div className="about-image">
+          <img
+            src="/images/gym/man-workout.jpg"
+            alt="About Fitness Club"
+          />
         </div>
 
         <div className="about-content">
-          <h2 className="about-title">About Our Fitness Community</h2>
+          <h2 className="about-title">ABOUT OUR FITNESS COMMUNITY</h2>
 
           <p className="about-description">
             We are more than just a gym — we’re a community built around strength,
@@ -28,7 +31,7 @@ const AboutSection = () => {
           </p>
 
           <Button variant="primary" size="lg">
-            Join the Community
+            BECAME A MEMBER
           </Button>
 
         </div>

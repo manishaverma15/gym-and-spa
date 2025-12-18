@@ -1,7 +1,12 @@
 .footer {
-  background: #7851A9;
   color: #e5e7eb;
   padding: 4rem 2rem 2rem;
+  
+  background: rgba(181, 126, 220, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
 }
 
 .footer-container {
@@ -47,7 +52,7 @@
 }
 
 .footer-links li:hover {
-  color: #b57edc;
+  color: #7851A9;
 }
 
 .footer-contact {
