@@ -1,11 +1,36 @@
 .membership {
+  position: relative;
   text-align: center;
-  padding: 20px;
+  padding: 100px 20px;
+  overflow: hidden;
+}
+
+.membership::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+     linear-gradient(180deg,
+      rgba(0, 0, 0, 0.75) 0%,
+      rgba(0, 0, 0, 0.6) 50%,
+      rgba(0, 0, 0, 0.75) 100%),
+    url("/images/gym/woman-holding-barbell.jpg");
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: cover;
+  image-rendering: auto;
+  transform: translateZ(0);
+  z-index: 0;
+}
+
+.membership > * {
+  position: relative;
+  z-index: 1;
 }
 
 .section-subtitle {
   font-size: 1.5rem;
-  color: #6b7280;
+  color: #ffffff;
   margin-bottom: 3rem;
 }
 
@@ -21,7 +46,7 @@
 .section-title {
   font-size: 2.5rem;
   font-weight: bold;
-  color: #6a0dad;
+  color: #ffffff;
   margin-bottom: 0.5rem;
 }
 
