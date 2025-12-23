@@ -26,10 +26,6 @@ const Testimonials = () => {
       <h2 className="testimonials-heading">What Our Members Say</h2>
 
       <div className="carousel-wrapper">
-        <button className="carousel-btn" onClick={handlePrev}>
-          ◀
-        </button>
-
         <div className="testimonials-grid">
           {visibleTestimonials.map((item, index) => (
             <div className="testimonial-card" key={index}>
@@ -51,9 +47,15 @@ const Testimonials = () => {
           ))}
         </div>
 
-        <button className="carousel-btn" onClick={handleNext}>
-          ▶
-        </button>
+        <div className="carousel-controls">
+          <button className="carousel-btn" onClick={handlePrev}>
+            ◀
+          </button>
+
+          <button className="carousel-btn" onClick={handleNext}>
+            ▶
+          </button>
+        </div>
       </div>
     </section>
   );

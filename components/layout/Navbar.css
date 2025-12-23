@@ -1,14 +1,14 @@
 .navbar {
   position: fixed;
-  padding: 1rem 2rem;
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 9999;
+  height: 70px;
+  padding: 0 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
+  z-index: 9999;
   background: rgba(5, 12, 25, 0.35);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
@@ -16,37 +16,72 @@
 
 .navbar-logo {
   font-size: 1.8rem;
-  font-weight: bold;
-  color: #fff;
+  font-weight: 700;
+  color: #ffffff;
+  cursor: pointer;
 }
 
 .navbar-links {
   display: flex;
-  color: white;
   gap: 2rem;
 }
 
 .navbar-link {
-  color: #eee;
+  color: #e5e7eb;
   font-size: 1rem;
-  cursor: pointer;
   text-decoration: none;
-  transition: 0.3s ease;
+  cursor: pointer;
+  transition: color 0.25s ease;
 }
+
+.navbar-link:hover {
+  color: #00c6ff;
+}
+
 
 .navbar-menu-icon {
   display: none;
   font-size: 2rem;
-  color: white;
+  color: #ffffff;
   cursor: pointer;
 }
 
 @media (max-width: 768px) {
+  .navbar {
+    padding: 0 1.5rem;
+  }
+
   .navbar-links {
-    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: rgba(5, 12, 25, 0.95);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 2rem 0;
+
+    /* animation */
+    transform: translateY(-10px);
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s ease;
+  }
+
+  .navbar-links.active {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
   }
 
   .navbar-menu-icon {
     display: block;
+  }
+
+  .navbar-link {
+    font-size: 1.2rem;
   }
 }
