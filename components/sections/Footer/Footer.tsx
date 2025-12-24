@@ -1,6 +1,7 @@
 "use client";
 
 import "./Footer.css";
+import { quickLinks, programLinks } from "@/components/data/footerLinks";
 
 const Footer = () => {
   return (
@@ -18,21 +19,18 @@ const Footer = () => {
         <div className="footer-col">
           <h4 className="footer-title">Quick Links</h4>
           <ul className="footer-links">
-            <li>Home</li>
-            <li>Programs</li>
-            <li>Trainers</li>
-            <li>Pricing</li>
-            <li>Contact</li>
+            {quickLinks.map((link) => (
+              <li key={link.label}>{link.label}</li>
+            ))}
           </ul>
         </div>
 
         <div className="footer-col">
           <h4 className="footer-title">Programs</h4>
           <ul className="footer-links">
-            <li>Strength Training</li>
-            <li>Yoga & Meditation</li>
-            <li>Cardio & HIIT</li>
-            <li>Spa & Recovery</li>
+            {programLinks.map((program) => (
+              <li key={program.label}>{program.label}</li>
+            ))}
           </ul>
         </div>
 
